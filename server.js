@@ -6,7 +6,7 @@ const server = express();
 server.use(morgan("dev"));
 server.use(express.static("public"));
 server.use(express.json());
-server.use("/", productsRoutes.routes);
+server.use("/api/v1/products", productsRoutes.routes);
 
 
 
